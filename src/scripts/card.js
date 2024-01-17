@@ -24,13 +24,7 @@ export function deleteCard(event) {
   listElement.remove();
 }
 
-//лайк в карточке
-export function clickCard(event) {
-  if (event.target.classList.contains("card__like-button")) {
-    likeCard(event);
-  }
-}
-
+//функция лайка карточки
 export function likeCard(event) {
   event.target.classList.toggle("card__like-button_is-active");
 }

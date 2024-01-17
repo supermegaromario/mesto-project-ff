@@ -1,12 +1,3 @@
-import {
-  popupCaption,
-  popupImage,
-  popupTypeImage,
-  nameInput,
-  jobInput,
-  popupTypeEdit,
-} from "../index.js";
-
 //функция открытия попапа
 export function openModal(event) {
   event.classList.add("popup_is-animated");
@@ -39,19 +30,4 @@ export function closeOverlay(event) {
   if (event.target.classList.contains("popup_is-opened")) {
     closeModal(event.target);
   }
-}
-
-//функция большой картинки
-export function openPopupImage(name, link) {
-  popupCaption.textContent = name;
-  popupImage.src = link;
-  openModal(popupTypeImage);
-}
-
-//редактор формы профиля
-export function handleFormSubmit(event) {
-  event.preventDefault();
-  document.querySelector(".profile__title").textContent = nameInput.value;
-  document.querySelector(".profile__description").textContent = jobInput.value;
-  closeModal(popupTypeEdit);
 }
