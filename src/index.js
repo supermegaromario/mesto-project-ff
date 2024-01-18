@@ -27,7 +27,9 @@ const profileDescription = document.querySelector(".profile__description");
 
 // @todo: Вывести карточки на страницу
 initialCards.forEach((item) =>
-cardsContainer.append(createCard(item.name, item.link, deleteCard, likeCard, openPopupImage))
+  cardsContainer.append(
+    createCard(item.name, item.link, deleteCard, likeCard, openPopupImage)
+  )
 );
 
 //слушатель клика открытия попапа новой карточки
