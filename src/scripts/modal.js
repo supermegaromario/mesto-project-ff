@@ -20,9 +20,7 @@ export function closeModal(event) {
 
 export function closeModalEsc(event) {
   if (event.key === "Escape") {
-    if (document.querySelector(".popup_is-opened")) {
-      closeModal(document.querySelector(".popup_is-opened"));
-    }
+    closeModal(document.querySelector(".popup_is-opened"));
   }
 }
 

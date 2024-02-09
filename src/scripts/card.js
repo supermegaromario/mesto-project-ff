@@ -1,5 +1,7 @@
-import { cardTemplate } from "../index.js";
 import { delCard, putLikeCard, unLikeCard } from "./api.js";
+
+// @todo: Темплейт карточки
+export const cardTemplate = document.querySelector("#card-template").content;
 
 // @todo: Функция создания карточки
 export function createCard(
